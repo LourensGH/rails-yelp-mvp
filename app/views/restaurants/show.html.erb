@@ -1,0 +1,22 @@
+<div class="flex">
+  <div class="rest-card">
+    <h1><%= @restaurant.name %></h1>
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone_number %></p>
+    <p><%= @restaurant.category %></p>
+  </div>
+  <div class="rest-card">
+    <h2><%= link_to "Edit", edit_restaurant_path, class: "links" %></h2>
+    <h2><%= button_to "Delete", @restaurant, method: :delete, class: "links" %></h2>
+    <h2><%= link_to "Leave a review", new_restaurant_review_path(@restaurant), class: "links" %></h2>
+  </div>
+</div>
+<div class="rest-card" id="revs">
+  <h1>Reviews:</h1>
+    <% @restaurant.reviews.each do |review| %>
+      <div class"rev-content">
+        <h2>Rating: <%= review.rating %></h2>
+        <p><%= review.content %></p>
+      </div>
+    <% end %>
+</div>

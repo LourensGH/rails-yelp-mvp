@@ -1,0 +1,7 @@
+<div class="actions"><h1><%= link_to "Add Restaurant", new_restaurant_path %></h1></div>
+
+<% @restaurants.each do |res| %>
+  <div class="rest-card"><h1><%= link_to res.name, restaurant_path(res) %></h1>
+  <p><%= res.address %></p>
+  <p><%= res.category %></p></div>
+<% end %>

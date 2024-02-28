@@ -1,15 +1,53 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.container {
+  padding: 20px;
+  background-color: brown;
+  margin: 18px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  position: sticky;
+  top: 0;
+  text-align: right;
+}
+
+.rest-card {
+  text-align: center;
+  border-radius: 16px;
+  width: 400px;
+  background-color: rgb(25, 190, 190);
+  margin: 30px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#revs {
+  margin: 6px auto;
+}
+
+.rev-content {
+  text-align: left;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid;
+  margin: 10px;
+  background-color: black;
+}
+
+.links:hover {
+  border-color: blue;
+  color: blue;
+}
